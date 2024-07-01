@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <button class="theme-btn" onclick="toggleTheme()"><i class="fas fa-adjust"></i></button>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Escribe aquí..." onkeydown="handleKeyPress(event)">
+            <button class="send-btn" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
